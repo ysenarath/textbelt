@@ -1,0 +1,25 @@
+{
+  "name": "textbelt",
+  "description": "TextBelt Open Source is a REST API that sends outgoing SMS.",
+  "scripts": {
+    "postdeploy": "npm install"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/hone/heroku-buildpack-mutt.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/redis"
+    }
+  ]
+}
